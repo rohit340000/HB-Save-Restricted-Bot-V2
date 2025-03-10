@@ -81,8 +81,8 @@ async def token_handler(client, message):
             [premium]    
         ])
          
-        await message.reply_photo(
-            msg.photo.file_id,
+        await message.
+           
             caption=(
                 "Hi 👋 Welcome, Wanna intro...?\n\n"
                 "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
