@@ -2,10 +2,10 @@
 # File Name: func.py
 # Description: A Pyrogram bot for downloading files from Telegram channels or groups 
 #              and uploading them back to Telegram.
-# Author: Gagan
-# GitHub: https://github.com/devgaganin/
-# Telegram: https://t.me/team_spy_pro
-# YouTube: https://youtube.com/@dev_gagan
+# Author: Harish JaaT
+# GitHub: https://github.com/harishjat77/
+# Telegram: https://t.me/HarishXBots
+# YouTube: https://youtube.com/@TalkWithHB
 # Created: 2025-01-11
 # Last Modified: 2025-01-11
 # Version: 2.0.5
@@ -46,7 +46,7 @@ async def subscribe(app, message):
         await message.reply_photo(photo="https://graph.org/file/d44f024a08ded19452152.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"{url}")]]))
         return 1
       except Exception:
-         await message.reply_text("Something Went Wrong. Contact us @devgaganin...")
+         await message.reply_text("Something Went Wrong. Contact us @Harish_X_Bot...")
          return 1
 async def get_seconds(time_string):
     def extract_value_and_unit(ts):
@@ -250,7 +250,7 @@ async def progress_callback(current, total, progress_message):
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**__Powered by Star Jaat__**"
+    f"**__Powered by Harish Jaat__**"
         )
 
         last_update_time = current_time
