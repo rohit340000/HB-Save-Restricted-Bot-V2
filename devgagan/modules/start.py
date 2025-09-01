@@ -2,10 +2,10 @@
 # File Name: start.py
 # Description: A Pyrogram bot for downloading files from Telegram channels or groups 
 #              and uploading them back to Telegram.
-# Author: Gagan
-# GitHub: https://github.com/devgaganin/
-# Telegram: https://t.me/team_spy_pro
-# YouTube: https://youtube.com/@dev_gagan
+# Author: Harish JaaT
+# GitHub: https://github.com/harishjat77/
+# Telegram: https://t.me/HarishXBots
+# YouTube: https://youtube.com/@TalkWithHB
 # Created: 2025-01-11
 # Last Modified: 2025-01-11
 # Version: 2.0.5
@@ -109,7 +109,7 @@ help_pages = [
         "> 4. REPLACEWORDS : Can be used for words in deleted set via REMOVE WORDS\n"
         "> 5. RESET : To set the things back to default\n\n"
         "> You can set CUSTOM THUMBNAIL, PDF WATERMARK, VIDEO WATERMARK, SESSION-based login, etc. from settings\n\n"
-        "**__Powered by Star Jaat__**"
+        "**__Powered by Harish Jaat__**"
     )
 ]
  
@@ -183,7 +183,7 @@ async def terms(client, message):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/star_jaat_bot")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/Harish_X_Bot")],
         ]
     )
     await message.reply_text(terms_text, reply_markup=buttons)
@@ -238,8 +238,8 @@ async def see_terms(client, callback_query):
      
     buttons = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("📋 See Plans", callback_data="jaat_one")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/star_jaat_bot")],
+            [InlineKeyboardButton("📋 See Plans", callback_data="HarishXBots")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/Harish_X_Bot")],
         ]
     )
     await callback_query.message.edit_text(terms_text, reply_markup=buttons)
