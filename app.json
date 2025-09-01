@@ -1,9 +1,9 @@
 {
   "name": "Save Restricted Content Bot master-v1 branch",
-  "description": "Save Restricted Content Bot by Team SPY",
+  "description": "Save Restricted Content Bot by Team HB",
   "logo": "https://telegra.ph/file/cad7038fe82e47f79c609.jpg",
   "keywords": ["python3", "telegram", "MusicBot", "telegram-bot", "pyrogram"],
-  "repository": "https://github.com/devgaganin/save_restricted-content-telegram-bot-repo",
+  "repository": "https://github.com/harishjat77/HB-Save-Restricted-Bot-V2",
   "success_url": "https://devgagan.in",
   "env": {
     "API_ID": {
@@ -60,7 +60,7 @@
     },
     "AD_API": {
       "description": "Batch size for premium users",
-      "value": "1a1f1cb9ba85a88dc7cc5fcb473ff79a",
+      "value": "1369d35ba08b972bb1e2282978dfbfab",
       "required": false
     },
     
