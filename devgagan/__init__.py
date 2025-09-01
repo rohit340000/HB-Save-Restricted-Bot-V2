@@ -2,7 +2,7 @@
 # File Name: __init__.py
 # Description: A Pyrogram bot for downloading files from Telegram channels or groups 
 #              and uploading them back to Telegram.
-# Author: Gagan
+# Author: Harish JaaT
 # GitHub: https://github.com/harishjat77/
 # Telegram: https://t.me/HarishXBots
 # YouTube: https://youtube.com/@TalkWithHB
