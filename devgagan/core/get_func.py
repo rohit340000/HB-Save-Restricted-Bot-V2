@@ -2,10 +2,10 @@
 # File Name: get_func.py
 # Description: A Pyrogram bot for downloading files from Telegram channels or groups 
 #              and uploading them back to Telegram.
-# Author: Gagan
-# GitHub: https://github.com/devgaganin/
-# Telegram: https://t.me/team_spy_pro
-# YouTube: https://youtube.com/@dev_gagan
+# Author: Harish JaaT
+# GitHub: https://github.com/harishjat77/
+# Telegram: https://t.me/HarishXBots
+# YouTube: https://youtube.com/@TalkWithHB
 # Created: 2025-01-11
 # Last Modified: 2025-02-01
 # Version: 2.0.5
@@ -105,7 +105,7 @@ async def upload_media(sender, target_chat_id, file, caption, edit, topic_id):
                     reply_to_message_id=topic_id,
                     parse_mode=ParseMode.MARKDOWN,
                     progress=progress_bar,
-                    progress_args=("╭─────────────────────╮\n│      **__STAR UPLOADER__**\n├─────────────────────", edit, time.time())
+                    progress_args=("╭─────────────────────╮\n│      **__HB UPLOADER__**\n├─────────────────────", edit, time.time())
                 )
                 await dm.copy(LOG_GROUP)
                 
@@ -586,7 +586,7 @@ user_caption_preferences = {}
 async def set_rename_command(user_id, custom_rename_tag):
     user_rename_preferences[str(user_id)] = custom_rename_tag
 
-get_user_rename_preference = lambda user_id: user_rename_preferences.get(str(user_id), 'STAR_JAAT')
+get_user_rename_preference = lambda user_id: user_rename_preferences.get(str(user_id), 'Harish_JAAT')
 
 async def set_caption_command(user_id, custom_caption):
     user_caption_preferences[str(user_id)] = custom_caption
@@ -616,7 +616,7 @@ async def send_settings_message(chat_id, user_id):
         [Button.inline("Set Thumbnail", b'setthumb'), Button.inline("Remove Thumbnail", b'remthumb')],
         [Button.inline("PDF Wtmrk", b'pdfwt'), Button.inline("Video Wtmrk", b'watermark')],
         [Button.inline("Upload Method", b'uploadmethod')],  # Include the dynamic Fast DL button
-        [Button.url("Report Errors", "https://t.me/star_jaat_bot")]
+        [Button.url("Report Errors", "https://t.me/Harish_X_Bot")]
     ]
 
     await gf.send_file(
@@ -670,7 +670,7 @@ async def callback_query_handler(event):
         await event.respond('Please send the photo you want to set as the thumbnail.')
     
     elif event.data == b'pdfwt':
-        await event.respond("Watermark is Pro+ Plan.. contact @satr_jaat_bot")
+        await event.respond("Watermark is Pro+ Plan.. contact @Harish_X_Bot")
         return
 
     elif event.data == b'uploadmethod':
@@ -682,18 +682,18 @@ async def callback_query_handler(event):
 
         # Display the buttons for selecting the upload method
         buttons = [
-            [Button.inline(f"STAR 01{pyrogram_check}", b'pyrogram')],
-            [Button.inline(f"MIRDHA ⚡{telethon_check}", b'telethon')]
+            [Button.inline(f"HB 01{pyrogram_check}", b'pyrogram')],
+            [Button.inline(f"HB 02 ⚡{telethon_check}", b'telethon')]
         ]
-        await event.edit("Choose your preferred upload method:\n\n__**Note:** **Mirdha ⚡**, built on Telethon(base), Star jaat still in beta.__", buttons=buttons)
+        await event.edit("Choose your preferred upload method:\n\n__**Note:** **HB 02 ⚡**, built on Telethon(base), Harish jaat still in beta.__", buttons=buttons)
 
     elif event.data == b'pyrogram':
         save_user_upload_method(user_id, "Pyrogram")
-        await event.edit("Upload method set to **STAR 01** ✅")
+        await event.edit("Upload method set to **HB 01** ✅")
 
     elif event.data == b'telethon':
         save_user_upload_method(user_id, "Telethon")
-        await event.edit("Upload method set to **Mirdha ⚡\n\nThanks for choosing this library as it will help me to analyze the error raise issues on github.** ✅")        
+        await event.edit("Upload method set to **HB 02 ⚡\n\nThanks for choosing this library as it will help me to analyze the error raise issues on github.** ✅")        
         
     elif event.data == b'reset':
         try:
@@ -896,7 +896,7 @@ async def handle_large_file(file, sender, edit, caption):
         if freecheck == 1:
             reply_markup = InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("💎 Get Premium to Forward", url="https://t.me/star_jaat_bot")]
+                    [InlineKeyboardButton("💎 Get Premium to Forward", url="https://t.me/Harish_X_Bot")]
                 ]
             )
             await app.copy_message(
@@ -1021,7 +1021,7 @@ def progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__STAR ⚡ Uploader__**       \n"
+        f"│     **__HARISH ⚡ Uploader__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -1029,7 +1029,7 @@ def progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by Star Jaat__**"
+        f"**__Powered by Harish Jaat__**"
     )
     
     # Update tracking variables for the user
@@ -1084,7 +1084,7 @@ def dl_progress_callback(done, total, user_id):
     # Format the final output as needed
     final = (
         f"╭──────────────────╮\n"
-        f"│     **__STAR ⚡ Downloader__**       \n"
+        f"│     **__HARISH ⚡ Downloader__**       \n"
         f"├──────────\n"
         f"│ {progress_bar}\n\n"
         f"│ **__Progress:__** {percent:.2f}%\n"
@@ -1092,7 +1092,7 @@ def dl_progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Powered by Star Jaat__**"
+        f"**__Powered by Harish Jaat__**"
     )
     
     # Update tracking variables for the user
